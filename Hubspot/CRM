@@ -1,0 +1,2319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RestApiSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Paths>
+    <RestPath>
+      <Name>/crm/v3/objects/contacts</Name>
+      <UrlTemplate>/crm/v3/objects/contacts</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <PaginationInfo xsi:type="PaginationInfoCursor">
+            <TotalPagesToRequest>1</TotalPagesToRequest>
+            <ReadTillEnd>true</ReadTillEnd>
+            <Limit>1</Limit>
+            <FieldLocation>Body</FieldLocation>
+            <CursorParameterName>after</CursorParameterName>
+            <CursorRecievedParameterPath>JSON_Body.root.paging.next.after</CursorRecievedParameterPath>
+          </PaginationInfo>
+          <ResourcePath>/crm/v3/objects/contacts</ResourcePath>
+          <Name>List_contacts</Name>
+          <Method>Get</Method>
+          <Summary>List contacts</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>List_contacts</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+            <RestResponse>
+              <HttpCode>200</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children />
+                        <Elements>
+                          <MetaElement>
+                            <Name>id</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>createdAt</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>Date</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>DateTime</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>updatedAt</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>Date</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>DateTime</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>archived</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>Boolean</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>Boolean</CoreDbType>
+                          </MetaElement>
+                        </Elements>
+                        <Referenced>
+                          <MetaBaseOfMetaElement xsi:type="MetaObject">
+                            <Children />
+                            <Elements>
+                              <MetaElement>
+                                <Name>company</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>country</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>createdate</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>Date</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>DateTime</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>email</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>hs_object_id</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>lastmodifieddate</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>Date</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>DateTime</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>phone</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>state</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>website</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>zip</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                            </Elements>
+                            <Referenced />
+                            <Name>properties</Name>
+                            <InboundPortVisible>true</InboundPortVisible>
+                            <OutboundPortVisible>true</OutboundPortVisible>
+                            <Indicator>None</Indicator>
+                            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                            <IsEmbeddedMember>false</IsEmbeddedMember>
+                          </MetaBaseOfMetaElement>
+                        </Referenced>
+                        <Name>results</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <Indicator>None</Indicator>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                      </MetaBaseOfMetaElement>
+                    </Children>
+                    <Elements />
+                    <Referenced>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children />
+                        <Elements />
+                        <Referenced>
+                          <MetaBaseOfMetaElement xsi:type="MetaObject">
+                            <Children />
+                            <Elements>
+                              <MetaElement>
+                                <Name>after</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>link</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                            </Elements>
+                            <Referenced />
+                            <Name>next</Name>
+                            <InboundPortVisible>true</InboundPortVisible>
+                            <OutboundPortVisible>true</OutboundPortVisible>
+                            <Indicator>None</Indicator>
+                            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                            <IsEmbeddedMember>false</IsEmbeddedMember>
+                          </MetaBaseOfMetaElement>
+                        </Referenced>
+                        <Name>paging</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <Indicator>None</Indicator>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                      </MetaBaseOfMetaElement>
+                    </Referenced>
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>after</Name>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+            </RestParameterProperties>
+            <RestParameterProperties>
+              <Name>limit</Name>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <Value>5</Value>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+            </RestParameterProperties>
+            <RestParameterProperties>
+              <Name>properties</Name>
+              <ParameterType>Query</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <Value>company,website,phone,email,state,zip,country</Value>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>JSON_Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <Indicator>None</Indicator>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+          </RequestMeta>
+          <ResponseHeaders />
+          <RestContentType>application/json</RestContentType>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/crm/v3/objects/contacts</ResourcePath>
+          <Name>create_a_contact</Name>
+          <Method>Post</Method>
+          <Summary>Create a contact</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>create_a_contact</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements>
+                      <MetaElement>
+                        <Name>company</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>email</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>firstname</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>lastname</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>phone</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>website</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                    </Elements>
+                    <Referenced />
+                    <Name>properties</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>JSON_Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <Indicator>None</Indicator>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+          </RequestMeta>
+          <ResponseHeaders />
+          <InputText>{&#xD;
+  "properties": {&#xD;
+    "company": "Biglytics",&#xD;
+    "email": "bcooper@biglytics.net",&#xD;
+    "firstname": "Bryan",&#xD;
+    "lastname": "Cooper",&#xD;
+    "phone": "(877) 929-0687",&#xD;
+    "website": "biglytics.net"&#xD;
+  }&#xD;
+}</InputText>
+          <RestContentType>application/json</RestContentType>
+        </RestOperation>
+      </Operations>
+    </RestPath>
+    <RestPath>
+      <Name>crm/v3/objects/contacts/associations/</Name>
+      <UrlTemplate>crm/v3/objects/contacts/associations/</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>crm/v3/objects/contacts/associations/</ResourcePath>
+          <Name>List_associations_of_a_contact_by_type</Name>
+          <Method>Get</Method>
+          <Summary>List associations of a contact by type</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>List_associations_of_a_contact_by_type</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+            <RestResponse>
+              <HttpCode>200</HttpCode>
+              <ResponseFormat>Json</ResponseFormat>
+              <ResponseMeta>
+                <Children>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements>
+                      <MetaElement>
+                        <Name>name</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>usageLimit</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Integer</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Int64</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>currentUsage</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Integer</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Int64</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>collectedAt</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Integer</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Int64</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>fetchStatus</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>resetsAt</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Integer</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Int64</CoreDbType>
+                      </MetaElement>
+                    </Elements>
+                    <Referenced />
+                    <Name>item</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Children>
+                <Elements />
+                <Referenced />
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>JSON_Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <Indicator>None</Indicator>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+          </RequestMeta>
+          <ResponseHeaders />
+          <ResponseText>[&#xD;
+  {&#xD;
+    "name": "api-calls-daily",&#xD;
+    "usageLimit": 1000000,&#xD;
+    "currentUsage": 31779,&#xD;
+    "collectedAt": 1560189939285,&#xD;
+    "fetchStatus": "SUCCESS",&#xD;
+    "resetsAt": 1560204000000&#xD;
+  }&#xD;
+]</ResponseText>
+          <RestContentType>application/json</RestContentType>
+        </RestOperation>
+      </Operations>
+    </RestPath>
+    <RestPath>
+      <Name>/crm/v3/objects/deals</Name>
+      <UrlTemplate>/crm/v3/objects/deals</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/crm/v3/objects/deals</ResourcePath>
+          <Name>Create_a_contact</Name>
+          <Method>Post</Method>
+          <Summary>Create a deal</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Create_a_contact</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements>
+                      <MetaElement>
+                        <Name>amount</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>closedate</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Date</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>DateTime</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>dealname</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>dealstage</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>hubspot_owner_id</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>pipeline</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                    </Elements>
+                    <Referenced />
+                    <Name>properties</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>JSON_Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <Indicator>None</Indicator>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+          </RequestMeta>
+          <ResponseHeaders />
+          <InputText>{&#xD;
+  "properties": {&#xD;
+    "amount": "1500.00",&#xD;
+    "closedate": "2019-12-07T16:50:06.678Z",&#xD;
+    "dealname": "Custom data integrations",&#xD;
+    "dealstage": "presentation scheduled",&#xD;
+    "hubspot_owner_id": "910901",&#xD;
+    "pipeline": "default"&#xD;
+  }&#xD;
+}</InputText>
+          <RestContentType>application/json</RestContentType>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/crm/v3/objects/deals</ResourcePath>
+          <Name>List_all_deals</Name>
+          <Method>Get</Method>
+          <Summary>List all deals</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>List_all_deals</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+            <RestResponse>
+              <HttpCode>200</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children />
+                        <Elements>
+                          <MetaElement>
+                            <Name>id</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>createdAt</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>Date</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>DateTime</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>updatedAt</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>Date</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>DateTime</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>archived</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>Boolean</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>Boolean</CoreDbType>
+                          </MetaElement>
+                        </Elements>
+                        <Referenced>
+                          <MetaBaseOfMetaElement xsi:type="MetaObject">
+                            <Children />
+                            <Elements>
+                              <MetaElement>
+                                <Name>amount</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>closedate</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>Date</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>DateTime</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>createdate</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>Date</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>DateTime</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>dealname</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>dealstage</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>hs_lastmodifieddate</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>Date</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>DateTime</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>hs_object_id</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>pipeline</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                            </Elements>
+                            <Referenced />
+                            <Name>properties</Name>
+                            <InboundPortVisible>true</InboundPortVisible>
+                            <OutboundPortVisible>true</OutboundPortVisible>
+                            <Indicator>None</Indicator>
+                            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                            <IsEmbeddedMember>false</IsEmbeddedMember>
+                          </MetaBaseOfMetaElement>
+                        </Referenced>
+                        <Name>results</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <Indicator>None</Indicator>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                      </MetaBaseOfMetaElement>
+                    </Children>
+                    <Elements />
+                    <Referenced>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children />
+                        <Elements />
+                        <Referenced>
+                          <MetaBaseOfMetaElement xsi:type="MetaObject">
+                            <Children />
+                            <Elements>
+                              <MetaElement>
+                                <Name>after</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                              <MetaElement>
+                                <Name>link</Name>
+                                <IsPrimaryKey>false</IsPrimaryKey>
+                                <HasCollections>false</HasCollections>
+                                <DataType>String</DataType>
+                                <CanRead>true</CanRead>
+                                <CanWrite>true</CanWrite>
+                                <CoreDbType>NVarChar</CoreDbType>
+                              </MetaElement>
+                            </Elements>
+                            <Referenced />
+                            <Name>next</Name>
+                            <InboundPortVisible>true</InboundPortVisible>
+                            <OutboundPortVisible>true</OutboundPortVisible>
+                            <Indicator>None</Indicator>
+                            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                            <IsEmbeddedMember>false</IsEmbeddedMember>
+                          </MetaBaseOfMetaElement>
+                        </Referenced>
+                        <Name>paging</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <Indicator>None</Indicator>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                      </MetaBaseOfMetaElement>
+                    </Referenced>
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>JSON_Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <Indicator>None</Indicator>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+          </RequestMeta>
+          <ResponseHeaders />
+          <RestContentType>application/json</RestContentType>
+        </RestOperation>
+      </Operations>
+    </RestPath>
+    <RestPath>
+      <Name>/crm/v3/objects/contacts/{contactId}</Name>
+      <UrlTemplate>/crm/v3/objects/contacts/{contactId}</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/crm/v3/objects/contacts/{contactId}</ResourcePath>
+          <Name>Get_a_contact_by_ID</Name>
+          <Method>Get</Method>
+          <Summary>Get a contact by ID</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Get_a_contact_by_ID</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+            <RestResponse>
+              <HttpCode>200</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements>
+                      <MetaElement>
+                        <Name>id</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>createdAt</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Date</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>DateTime</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>updatedAt</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Date</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>DateTime</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>archived</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                    </Elements>
+                    <Referenced>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children />
+                        <Elements>
+                          <MetaElement>
+                            <Name>createdate</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>Date</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>DateTime</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>email</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>firstname</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>hs_object_id</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>lastmodifieddate</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>Date</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>DateTime</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>lastname</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                        </Elements>
+                        <Referenced />
+                        <Name>properties</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <Indicator>None</Indicator>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                      </MetaBaseOfMetaElement>
+                    </Referenced>
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>contactId</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>JSON_Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <Indicator>None</Indicator>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+          </RequestMeta>
+          <ResponseHeaders />
+          <RestContentType>application/json</RestContentType>
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/crm/v3/objects/contacts/{contactId}</ResourcePath>
+          <Name>Update a contact</Name>
+          <Method>Patch</Method>
+          <Summary>Update a contact</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Update a contact</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>contactId</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>JSON_Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <Indicator>None</Indicator>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+          </RequestMeta>
+          <ResponseHeaders />
+        </RestOperation>
+        <RestOperation>
+          <ResourcePath>/crm/v3/objects/contacts/{contactId}</ResourcePath>
+          <Name>Arhive contact</Name>
+          <Method>Delete</Method>
+          <Summary>Arhive contact</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Arhive contact</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList>
+            <RestParameterProperties>
+              <Name>contactId</Name>
+              <ParameterType>Url</ParameterType>
+              <PaginationFieldType>None</PaginationFieldType>
+              <DataType>String</DataType>
+              <IsRequired>false</IsRequired>
+              <IsMapAllowed>true</IsMapAllowed>
+              <IsSharedConnectionParameter>false</IsSharedConnectionParameter>
+              <OverrideInheritedParameter>false</OverrideInheritedParameter>
+              <IsResourceParameter>false</IsResourceParameter>
+            </RestParameterProperties>
+          </RestParameterPropertiesList>
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>JSON_Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <Indicator>None</Indicator>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+          </RequestMeta>
+          <ResponseHeaders />
+        </RestOperation>
+      </Operations>
+    </RestPath>
+    <RestPath>
+      <Name>/crm/v3/objects/contacts/batch/create</Name>
+      <UrlTemplate>/crm/v3/objects/contacts/batch/create</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/crm/v3/objects/contacts/batch/create</ResourcePath>
+          <Name>Create_a_batch_of_contacts</Name>
+          <Method>Post</Method>
+          <Summary>Create a batch of contacts</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Create_a_batch_of_contacts</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children />
+                        <Elements>
+                          <MetaElement>
+                            <Name>company</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>email</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>firstname</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>lastname</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>phone</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                          <MetaElement>
+                            <Name>website</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                        </Elements>
+                        <Referenced />
+                        <Name>properties</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <Indicator>None</Indicator>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                      </MetaBaseOfMetaElement>
+                    </Referenced>
+                    <Name>inputs</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Children>
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>JSON_Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <Indicator>None</Indicator>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+          </RequestMeta>
+          <ResponseHeaders />
+          <InputText>{&#xD;
+  "inputs": [&#xD;
+    {&#xD;
+      "properties": {&#xD;
+        "company": "Biglytics",&#xD;
+        "email": "bcooper@biglytics.net",&#xD;
+        "firstname": "Bryan",&#xD;
+        "lastname": "Cooper",&#xD;
+        "phone": "(877) 929-0687",&#xD;
+        "website": "biglytics.net"&#xD;
+      }&#xD;
+    }&#xD;
+  ]&#xD;
+}</InputText>
+          <RestContentType>application/json</RestContentType>
+        </RestOperation>
+      </Operations>
+    </RestPath>
+    <RestPath>
+      <Name>properties/v2/contacts/properties</Name>
+      <UrlTemplate>properties/v2/contacts/properties</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>properties/v2/contacts/properties</ResourcePath>
+          <Name>ContactPropertyFields</Name>
+          <Method>Get</Method>
+          <Summary>List associations of a contact by type</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>ContactPropertyFields</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+            <RestResponse>
+              <HttpCode>200</HttpCode>
+              <ResponseFormat>Json</ResponseFormat>
+              <ResponseMeta>
+                <Children>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children>
+                      <MetaBaseOfMetaElement xsi:type="MetaObject">
+                        <Children />
+                        <Elements>
+                          <MetaElement>
+                            <Name>__data__</Name>
+                            <IsPrimaryKey>false</IsPrimaryKey>
+                            <HasCollections>false</HasCollections>
+                            <DataType>String</DataType>
+                            <CanRead>true</CanRead>
+                            <CanWrite>true</CanWrite>
+                            <CoreDbType>NVarChar</CoreDbType>
+                          </MetaElement>
+                        </Elements>
+                        <Referenced />
+                        <Name>options</Name>
+                        <InboundPortVisible>true</InboundPortVisible>
+                        <OutboundPortVisible>true</OutboundPortVisible>
+                        <Indicator>None</Indicator>
+                        <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                        <IsEmbeddedMember>false</IsEmbeddedMember>
+                      </MetaBaseOfMetaElement>
+                    </Children>
+                    <Elements>
+                      <MetaElement>
+                        <Name>name</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>label</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>description</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>groupName</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>type</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>fieldType</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>fieldLevelPermission</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>hidden</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>updatedAt</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Integer</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Int64</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>deleted</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>isCustomizedDefault</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>displayOrder</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Integer</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Int64</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>referencedObjectType</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>createdAt</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Integer</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Int64</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>hasUniqueValue</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>optionSortStrategy</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>numberDisplayHint</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>readOnlyDefinition</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>calculated</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>externalOptions</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>displayMode</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>showCurrencySymbol</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>textDisplayHint</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>optionsAreMutable</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>searchTextAnalysisMode</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>updatedUserId</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Integer</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Int64</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>hubspotDefined</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>createdUserId</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Integer</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Int64</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>externalOptionsReferenceType</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>searchableInGlobalSearch</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>currencyPropertyName</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>String</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>NVarChar</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>formField</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>readOnlyValue</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>mutableDefinitionNotDeletable</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>favorited</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Boolean</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Boolean</CoreDbType>
+                      </MetaElement>
+                      <MetaElement>
+                        <Name>favoritedOrder</Name>
+                        <IsPrimaryKey>false</IsPrimaryKey>
+                        <HasCollections>false</HasCollections>
+                        <DataType>Integer</DataType>
+                        <CanRead>true</CanRead>
+                        <CanWrite>true</CanWrite>
+                        <CoreDbType>Int64</CoreDbType>
+                      </MetaElement>
+                    </Elements>
+                    <Referenced />
+                    <Name>item</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Children>
+                <Elements />
+                <Referenced />
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>JSON_Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <Indicator>None</Indicator>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+          </RequestMeta>
+          <ResponseHeaders />
+          <ResponseText>[&#xD;
+  {&#xD;
+    "name": "api-calls-daily",&#xD;
+    "usageLimit": 1000000,&#xD;
+    "currentUsage": 31779,&#xD;
+    "collectedAt": 1560189939285,&#xD;
+    "fetchStatus": "SUCCESS",&#xD;
+    "resetsAt": 1560204000000&#xD;
+  }&#xD;
+]</ResponseText>
+          <RestContentType>application/json</RestContentType>
+        </RestOperation>
+      </Operations>
+    </RestPath>
+    <RestPath>
+      <Name>/crm/v3/objects/contacts/search</Name>
+      <UrlTemplate>/crm/v3/objects/contacts/search</UrlTemplate>
+      <Operations>
+        <RestOperation>
+          <ResourcePath>/crm/v3/objects/contacts/search</ResourcePath>
+          <Name>Filter, Sort, and Search CRM Objects</Name>
+          <Method>Post</Method>
+          <Summary>Filter, Sort, and Search CRM Objects</Summary>
+          <RequestFormat>None</RequestFormat>
+          <Deprecated>false</Deprecated>
+          <OperationId>Filter, Sort, and Search CRM Objects</OperationId>
+          <Responses>
+            <RestResponse>
+              <HttpCode>0</HttpCode>
+              <ResponseFormat>None</ResponseFormat>
+              <ResponseMeta>
+                <Children />
+                <Elements />
+                <Referenced>
+                  <MetaBaseOfMetaElement xsi:type="MetaObject">
+                    <Children />
+                    <Elements />
+                    <Referenced />
+                    <Name>root</Name>
+                    <InboundPortVisible>true</InboundPortVisible>
+                    <OutboundPortVisible>true</OutboundPortVisible>
+                    <Indicator>None</Indicator>
+                    <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                    <IsEmbeddedMember>false</IsEmbeddedMember>
+                  </MetaBaseOfMetaElement>
+                </Referenced>
+                <Name>JSON_Body</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </ResponseMeta>
+            </RestResponse>
+          </Responses>
+          <RestParameterPropertiesList />
+          <RequestMeta>
+            <Children />
+            <Elements />
+            <Referenced>
+              <MetaBaseOfMetaElement xsi:type="MetaObject">
+                <Children />
+                <Elements />
+                <Referenced />
+                <Name>root</Name>
+                <InboundPortVisible>true</InboundPortVisible>
+                <OutboundPortVisible>true</OutboundPortVisible>
+                <Indicator>None</Indicator>
+                <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+                <IsEmbeddedMember>false</IsEmbeddedMember>
+              </MetaBaseOfMetaElement>
+            </Referenced>
+            <Name>JSON_Body</Name>
+            <InboundPortVisible>true</InboundPortVisible>
+            <OutboundPortVisible>true</OutboundPortVisible>
+            <Indicator>None</Indicator>
+            <IsPrimitiveValueCollection>false</IsPrimitiveValueCollection>
+            <IsEmbeddedMember>false</IsEmbeddedMember>
+          </RequestMeta>
+          <ResponseHeaders />
+        </RestOperation>
+      </Operations>
+    </RestPath>
+  </Paths>
+  <Title>MyHubSpot</Title>
+  <Fullpath>\\astera.com\share\general\Saleha Zubairi\Trainings\DataServices\APIs\MyHubSpot.capi</Fullpath>
+  <BaseUrl>https://api.hubapi.com</BaseUrl>
+  <ApiSharedConnection>MyHubSpot</ApiSharedConnection>
+  <IsDirty>false</IsDirty>
+  <SecuritySchemes>
+    <RestApiSecurity>
+      <Type>IntegratedAuth</Type>
+      <Scheme>bearer</Scheme>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>NoAuth</Type>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>OAuth2</Type>
+      <Flows>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>Implicit</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>authorization_code</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>password</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+        <OAuthFlowObject>
+          <AuthorizationUrl />
+          <TokenUrl />
+          <RefreshUrl />
+          <OAuthFlowObjectType>client_credentials</OAuthFlowObjectType>
+          <OAuthFlowObjectTypeString />
+        </OAuthFlowObject>
+      </Flows>
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>ApiKey</Type>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>Http</Type>
+      <Scheme>basic</Scheme>
+      <Flows />
+    </RestApiSecurity>
+    <RestApiSecurity>
+      <Type>BearerToken</Type>
+      <Scheme>bearer</Scheme>
+      <Flows />
+    </RestApiSecurity>
+  </SecuritySchemes>
+  <AuthInfo>
+    <ApiKeyLocation>Header</ApiKeyLocation>
+    <oAuthFlowObjectType>Implicit</oAuthFlowObjectType>
+    <TokenSecret />
+    <IgnoreCertificateErrors>false</IgnoreCertificateErrors>
+    <ApiSecuritySchemeType>IntegratedAuth</ApiSecuritySchemeType>
+    <ProvideTokenManually>false</ProvideTokenManually>
+  </AuthInfo>
+  <IsCustomApiSet>true</IsCustomApiSet>
+  <Timeout>5000</Timeout>
+  <Headers />
+  <SharedConnectionParams />
+  <Models />
+</RestApiSet>
